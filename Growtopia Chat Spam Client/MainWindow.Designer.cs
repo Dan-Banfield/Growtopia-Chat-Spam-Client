@@ -170,6 +170,7 @@ namespace Growtopia_Chat_Spam_Client
             this.clearTextBoxButton.Size = new System.Drawing.Size(225, 32);
             this.clearTextBoxButton.TabIndex = 3;
             this.clearTextBoxButton.Text = "Clear text box";
+            this.clearTextBoxButton.Click += new System.EventHandler(this.clearTextBoxButton_Click);
             // 
             // topMostCheckBox
             // 
@@ -192,6 +193,7 @@ namespace Growtopia_Chat_Spam_Client
             this.spamIntervalTrackBar.TabIndex = 5;
             this.spamIntervalTrackBar.Text = "Spam Interval";
             this.spamIntervalTrackBar.Value = 100;
+            this.spamIntervalTrackBar.Scroll += new NSTrackBar.ScrollEventHandler(this.spamIntervalTrackBar_Scroll);
             // 
             // titleLabel2
             // 
