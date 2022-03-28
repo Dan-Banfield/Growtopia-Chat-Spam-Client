@@ -66,7 +66,7 @@ namespace Growtopia_Chat_Spam_Client
             this.netSealTheme.Name = "netSealTheme";
             this.netSealTheme.NoRounding = false;
             this.netSealTheme.Sizable = true;
-            this.netSealTheme.Size = new System.Drawing.Size(800, 450);
+            this.netSealTheme.Size = new System.Drawing.Size(600, 350);
             this.netSealTheme.SmartBounds = true;
             this.netSealTheme.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.netSealTheme.TabIndex = 0;
@@ -78,7 +78,7 @@ namespace Growtopia_Chat_Spam_Client
             // 
             this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.closeButton.ControlButton = NSControlButton.Button.Close;
-            this.closeButton.Location = new System.Drawing.Point(775, 4);
+            this.closeButton.Location = new System.Drawing.Point(575, 4);
             this.closeButton.Margin = new System.Windows.Forms.Padding(0);
             this.closeButton.MaximumSize = new System.Drawing.Size(18, 20);
             this.closeButton.MinimumSize = new System.Drawing.Size(18, 20);
@@ -91,7 +91,7 @@ namespace Growtopia_Chat_Spam_Client
             // 
             this.minimizeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.minimizeButton.ControlButton = NSControlButton.Button.Minimize;
-            this.minimizeButton.Location = new System.Drawing.Point(748, 4);
+            this.minimizeButton.Location = new System.Drawing.Point(548, 4);
             this.minimizeButton.Margin = new System.Windows.Forms.Padding(0);
             this.minimizeButton.MaximumSize = new System.Drawing.Size(18, 20);
             this.minimizeButton.MinimumSize = new System.Drawing.Size(18, 20);
@@ -116,7 +116,7 @@ namespace Growtopia_Chat_Spam_Client
             this.optionsGroupBox.DrawSeperator = false;
             this.optionsGroupBox.Location = new System.Drawing.Point(23, 47);
             this.optionsGroupBox.Name = "optionsGroupBox";
-            this.optionsGroupBox.Size = new System.Drawing.Size(754, 383);
+            this.optionsGroupBox.Size = new System.Drawing.Size(554, 283);
             this.optionsGroupBox.SubTitle = "Select the options to consider when spamming.";
             this.optionsGroupBox.TabIndex = 2;
             this.optionsGroupBox.Text = "nsGroupBox1";
@@ -147,7 +147,7 @@ namespace Growtopia_Chat_Spam_Client
             this.textToSpamTextBox.NumberBounds = new System.Drawing.Point(0, 0);
             this.textToSpamTextBox.NumbersOnly = false;
             this.textToSpamTextBox.ReadOnly = false;
-            this.textToSpamTextBox.Size = new System.Drawing.Size(463, 293);
+            this.textToSpamTextBox.Size = new System.Drawing.Size(263, 193);
             this.textToSpamTextBox.TabIndex = 1;
             this.textToSpamTextBox.Text = "Your text to spam here.";
             this.textToSpamTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -156,7 +156,7 @@ namespace Growtopia_Chat_Spam_Client
             // startSpamButton
             // 
             this.startSpamButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.startSpamButton.Location = new System.Drawing.Point(505, 300);
+            this.startSpamButton.Location = new System.Drawing.Point(305, 200);
             this.startSpamButton.Name = "startSpamButton";
             this.startSpamButton.Size = new System.Drawing.Size(225, 32);
             this.startSpamButton.TabIndex = 2;
@@ -165,7 +165,7 @@ namespace Growtopia_Chat_Spam_Client
             // clearTextBoxButton
             // 
             this.clearTextBoxButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.clearTextBoxButton.Location = new System.Drawing.Point(505, 262);
+            this.clearTextBoxButton.Location = new System.Drawing.Point(305, 162);
             this.clearTextBoxButton.Name = "clearTextBoxButton";
             this.clearTextBoxButton.Size = new System.Drawing.Size(225, 32);
             this.clearTextBoxButton.TabIndex = 3;
@@ -175,7 +175,7 @@ namespace Growtopia_Chat_Spam_Client
             // 
             this.topMostCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.topMostCheckBox.Checked = false;
-            this.topMostCheckBox.Location = new System.Drawing.Point(649, 343);
+            this.topMostCheckBox.Location = new System.Drawing.Point(449, 243);
             this.topMostCheckBox.Name = "topMostCheckBox";
             this.topMostCheckBox.Size = new System.Drawing.Size(81, 23);
             this.topMostCheckBox.TabIndex = 4;
@@ -184,7 +184,7 @@ namespace Growtopia_Chat_Spam_Client
             // spamIntervalTrackBar
             // 
             this.spamIntervalTrackBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.spamIntervalTrackBar.Location = new System.Drawing.Point(505, 222);
+            this.spamIntervalTrackBar.Location = new System.Drawing.Point(305, 122);
             this.spamIntervalTrackBar.Maximum = 10000;
             this.spamIntervalTrackBar.Minimum = 100;
             this.spamIntervalTrackBar.Name = "spamIntervalTrackBar";
@@ -197,7 +197,7 @@ namespace Growtopia_Chat_Spam_Client
             // 
             this.titleLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.titleLabel2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            this.titleLabel2.Location = new System.Drawing.Point(505, 171);
+            this.titleLabel2.Location = new System.Drawing.Point(305, 71);
             this.titleLabel2.Name = "titleLabel2";
             this.titleLabel2.Size = new System.Drawing.Size(127, 23);
             this.titleLabel2.TabIndex = 6;
@@ -210,7 +210,7 @@ namespace Growtopia_Chat_Spam_Client
             this.selectedSpamIntervalLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.selectedSpamIntervalLabel.AutoSize = true;
             this.selectedSpamIntervalLabel.ForeColor = System.Drawing.Color.White;
-            this.selectedSpamIntervalLabel.Location = new System.Drawing.Point(502, 197);
+            this.selectedSpamIntervalLabel.Location = new System.Drawing.Point(302, 97);
             this.selectedSpamIntervalLabel.Name = "selectedSpamIntervalLabel";
             this.selectedSpamIntervalLabel.Size = new System.Drawing.Size(189, 13);
             this.selectedSpamIntervalLabel.TabIndex = 7;
@@ -220,7 +220,7 @@ namespace Growtopia_Chat_Spam_Client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 350);
             this.Controls.Add(this.netSealTheme);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
