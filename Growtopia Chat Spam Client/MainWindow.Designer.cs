@@ -227,6 +227,7 @@ namespace Growtopia_Chat_Spam_Client
             // githubLogoPictureBox
             // 
             this.githubLogoPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.githubLogoPictureBox.Cursor = System.Windows.Forms.Cursors.Cross;
             this.githubLogoPictureBox.Image = global::Growtopia_Chat_Spam_Client.Properties.Resources.GitHub_Mark_Light_120px_plus;
             this.githubLogoPictureBox.Location = new System.Drawing.Point(443, 12);
             this.githubLogoPictureBox.Name = "githubLogoPictureBox";
@@ -234,6 +235,7 @@ namespace Growtopia_Chat_Spam_Client
             this.githubLogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.githubLogoPictureBox.TabIndex = 8;
             this.githubLogoPictureBox.TabStop = false;
+            this.githubLogoPictureBox.Click += new System.EventHandler(this.githubLogoPictureBox_Click);
             // 
             // saveConfigButton
             // 
@@ -243,6 +245,7 @@ namespace Growtopia_Chat_Spam_Client
             this.saveConfigButton.Size = new System.Drawing.Size(138, 27);
             this.saveConfigButton.TabIndex = 9;
             this.saveConfigButton.Text = "Save config";
+            this.saveConfigButton.Click += new System.EventHandler(this.saveConfigButton_Click);
             // 
             // MainWindow
             // 
