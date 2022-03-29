@@ -6,6 +6,8 @@ namespace Growtopia_Chat_Spam_Client
 {
     public partial class MainWindow : Form
     {
+        private Spammer spammer;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -43,7 +45,14 @@ namespace Growtopia_Chat_Spam_Client
             Properties.Settings.Default.spamInterval = spamIntervalTrackBar.Value;
             Properties.Settings.Default.topMost = topMostCheckBox.Checked;
 
-            MessageBox.Show("Your config has been saved successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Generics.MessageBox.ShowInformation("Your config has been saved successfully.");
+        }
+
+        private void toggleSpamButton_Click(object sender, EventArgs e)
+        {
+            if (spammer is null) spammer = new Spammer(toggleSpamButton, textToSpamTextBox, spamIntervalTrackBar);
+
+            spammer.ToggleSpam();
         }
 
         #endregion

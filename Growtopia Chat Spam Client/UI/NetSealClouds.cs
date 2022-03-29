@@ -130,7 +130,7 @@ class NSTheme : ThemeContainer154
 
 }
 
-class NSButton : Control
+public class NSButton : Control
 {
 
     public NSButton()
@@ -416,7 +416,7 @@ class NSLabel : Control
 }
 
 [DefaultEvent("TextChanged")]
-class NSTextBox : Control
+public class NSTextBox : Control
 {
 
     private HorizontalAlignment _TextAlign = HorizontalAlignment.Left;
@@ -1585,7 +1585,7 @@ class NSSeperator : Control
 }
 
 [DefaultEvent("Scroll")]
-class NSTrackBar : Control
+public class NSTrackBar : Control
 {
 
     public event ScrollEventHandler Scroll;

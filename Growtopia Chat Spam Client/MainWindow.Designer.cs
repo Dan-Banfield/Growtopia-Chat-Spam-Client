@@ -32,18 +32,18 @@ namespace Growtopia_Chat_Spam_Client
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.netSealTheme = new NSTheme();
             this.optionsGroupBox = new NSGroupBox();
+            this.saveConfigButton = new NSButton();
+            this.githubLogoPictureBox = new System.Windows.Forms.PictureBox();
             this.selectedSpamIntervalLabel = new System.Windows.Forms.Label();
             this.titleLabel2 = new NSLabel();
             this.spamIntervalTrackBar = new NSTrackBar();
             this.topMostCheckBox = new NSCheckBox();
             this.clearTextBoxButton = new NSButton();
-            this.startSpamButton = new NSButton();
+            this.toggleSpamButton = new NSButton();
             this.textToSpamTextBox = new NSTextBox();
             this.titleLabel = new NSLabel();
             this.minimizeButton = new NSControlButton();
             this.closeButton = new NSControlButton();
-            this.githubLogoPictureBox = new System.Windows.Forms.PictureBox();
-            this.saveConfigButton = new NSButton();
             this.netSealTheme.SuspendLayout();
             this.optionsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.githubLogoPictureBox)).BeginInit();
@@ -89,7 +89,7 @@ namespace Growtopia_Chat_Spam_Client
             this.optionsGroupBox.Controls.Add(this.spamIntervalTrackBar);
             this.optionsGroupBox.Controls.Add(this.topMostCheckBox);
             this.optionsGroupBox.Controls.Add(this.clearTextBoxButton);
-            this.optionsGroupBox.Controls.Add(this.startSpamButton);
+            this.optionsGroupBox.Controls.Add(this.toggleSpamButton);
             this.optionsGroupBox.Controls.Add(this.textToSpamTextBox);
             this.optionsGroupBox.Controls.Add(this.titleLabel);
             this.optionsGroupBox.DrawSeperator = false;
@@ -100,6 +100,29 @@ namespace Growtopia_Chat_Spam_Client
             this.optionsGroupBox.TabIndex = 2;
             this.optionsGroupBox.Text = "nsGroupBox1";
             this.optionsGroupBox.Title = "Options";
+            // 
+            // saveConfigButton
+            // 
+            this.saveConfigButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveConfigButton.Location = new System.Drawing.Point(305, 241);
+            this.saveConfigButton.Name = "saveConfigButton";
+            this.saveConfigButton.Size = new System.Drawing.Size(138, 27);
+            this.saveConfigButton.TabIndex = 9;
+            this.saveConfigButton.Text = "Save config";
+            this.saveConfigButton.Click += new System.EventHandler(this.saveConfigButton_Click);
+            // 
+            // githubLogoPictureBox
+            // 
+            this.githubLogoPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.githubLogoPictureBox.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.githubLogoPictureBox.Image = global::Growtopia_Chat_Spam_Client.Properties.Resources.GitHub_Mark_Light_120px_plus;
+            this.githubLogoPictureBox.Location = new System.Drawing.Point(443, 12);
+            this.githubLogoPictureBox.Name = "githubLogoPictureBox";
+            this.githubLogoPictureBox.Size = new System.Drawing.Size(100, 50);
+            this.githubLogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.githubLogoPictureBox.TabIndex = 8;
+            this.githubLogoPictureBox.TabStop = false;
+            this.githubLogoPictureBox.Click += new System.EventHandler(this.githubLogoPictureBox_Click);
             // 
             // selectedSpamIntervalLabel
             // 
@@ -158,14 +181,15 @@ namespace Growtopia_Chat_Spam_Client
             this.clearTextBoxButton.Text = "Clear text box";
             this.clearTextBoxButton.Click += new System.EventHandler(this.clearTextBoxButton_Click);
             // 
-            // startSpamButton
+            // toggleSpamButton
             // 
-            this.startSpamButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.startSpamButton.Location = new System.Drawing.Point(305, 200);
-            this.startSpamButton.Name = "startSpamButton";
-            this.startSpamButton.Size = new System.Drawing.Size(225, 32);
-            this.startSpamButton.TabIndex = 2;
-            this.startSpamButton.Text = "Start spamming!";
+            this.toggleSpamButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.toggleSpamButton.Location = new System.Drawing.Point(305, 200);
+            this.toggleSpamButton.Name = "toggleSpamButton";
+            this.toggleSpamButton.Size = new System.Drawing.Size(225, 32);
+            this.toggleSpamButton.TabIndex = 2;
+            this.toggleSpamButton.Text = "Start spamming!";
+            this.toggleSpamButton.Click += new System.EventHandler(this.toggleSpamButton_Click);
             // 
             // textToSpamTextBox
             // 
@@ -224,29 +248,6 @@ namespace Growtopia_Chat_Spam_Client
             this.closeButton.TabIndex = 0;
             this.closeButton.Text = "Close";
             // 
-            // githubLogoPictureBox
-            // 
-            this.githubLogoPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.githubLogoPictureBox.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.githubLogoPictureBox.Image = global::Growtopia_Chat_Spam_Client.Properties.Resources.GitHub_Mark_Light_120px_plus;
-            this.githubLogoPictureBox.Location = new System.Drawing.Point(443, 12);
-            this.githubLogoPictureBox.Name = "githubLogoPictureBox";
-            this.githubLogoPictureBox.Size = new System.Drawing.Size(100, 50);
-            this.githubLogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.githubLogoPictureBox.TabIndex = 8;
-            this.githubLogoPictureBox.TabStop = false;
-            this.githubLogoPictureBox.Click += new System.EventHandler(this.githubLogoPictureBox_Click);
-            // 
-            // saveConfigButton
-            // 
-            this.saveConfigButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.saveConfigButton.Location = new System.Drawing.Point(305, 241);
-            this.saveConfigButton.Name = "saveConfigButton";
-            this.saveConfigButton.Size = new System.Drawing.Size(138, 27);
-            this.saveConfigButton.TabIndex = 9;
-            this.saveConfigButton.Text = "Save config";
-            this.saveConfigButton.Click += new System.EventHandler(this.saveConfigButton_Click);
-            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -276,7 +277,7 @@ namespace Growtopia_Chat_Spam_Client
         private NSGroupBox optionsGroupBox;
         private NSLabel titleLabel;
         private NSTextBox textToSpamTextBox;
-        private NSButton startSpamButton;
+        private NSButton toggleSpamButton;
         private NSButton clearTextBoxButton;
         private NSCheckBox topMostCheckBox;
         private NSTrackBar spamIntervalTrackBar;
